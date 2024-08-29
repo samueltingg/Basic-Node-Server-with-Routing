@@ -25,6 +25,11 @@ const server = http.createServer(function(request, response) {
 		serveFile('./public/index.html', response);
 	} else if (request.url == '/about.html') {
 		serveFile('./public/about.html', response);
+	} else if (request.url === '/api/data') {
+        // Serve JSON data for an API route
+		response.statusCode = 200;
+		response.setHeader = ('Content-Type', 'application/json');
+        response.end(JSON.stringify({ message: 'Hello, this is your data!' }));
 	} else {
 		serveFile('./public/404.html', response);
 	} 
