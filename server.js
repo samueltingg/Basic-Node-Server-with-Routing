@@ -23,7 +23,7 @@ const server = http.createServer(function(request, response) {
 	// Server index.html only
 	if (request.url == '/') {
 		serveFile('./public/index.html', response);
-	} else if (request.url == '/about.html') {
+	} else if (request.url == '/about') {
 		serveFile('./public/about.html', response);
 	} else if (request.url === '/api/data') {
         // Serve JSON data for an API route
