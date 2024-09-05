@@ -1,4 +1,4 @@
-Create a server that handles multiple routes, serving different HTML pages, a JSON response, and handling 404 errors for unknown routes.
+Create a server using Node.js that handles multiple routes, serving different HTML pages, a JSON response, and handling 404 errors for unknown routes.
 
 Visit the following URLs in your browser:
 
